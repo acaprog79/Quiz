@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alejandria.checkboxes.MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Tip Percent"
+        android:checked="true"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="54dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="102dp"
+        android:layout_alignBaseline="@+id/radioButton3"
+        android:layout_alignBottom="@+id/radioButton3"
+        android:layout_toEndOf="@+id/radioButton3" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:checked="true"
+        android:text="RadioButton"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="102dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButton"
+        android:layout_alignBottom="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton"
+        android:text="RadioButton"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="15"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_toEndOf="@+id/seekBar" />
+
+
+</RelativeLayout>

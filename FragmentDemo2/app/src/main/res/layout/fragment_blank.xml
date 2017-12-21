@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alejandria.fragmentdemo.TopSectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/topED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Top Text" />
+
+    <EditText
+        android:id="@+id/bottomET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Bottom Text"
+        android:layout_below="@+id/topED"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/memifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memify"
+        android:layout_below="@+id/bottomET"
+        android:layout_alignEnd="@+id/bottomET"
+        android:layout_marginTop="66dp" />
+</RelativeLayout>

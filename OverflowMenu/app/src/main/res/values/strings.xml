@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Overflow Menu</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="listArray">
+        <item>Heading</item>
+        <item>Heading and Details</item>
+        <item>All Data</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

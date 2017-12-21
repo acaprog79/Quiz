@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TipCalculatorSeekBar</string>
+    <string name="bill_amount_label">Bill Amount</string>
+</resources>

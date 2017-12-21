@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alejandria.overflowmenu.MainActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/ic_launcher_setting"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_overflow"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="never"
+        android:title="Overflow">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_red"
+                android:orderInCategory="1"
+                android:title="Red"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_green"
+                android:orderInCategory="1"
+                android:title="Green"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_yellow"
+                android:orderInCategory="1"
+                android:title="Yellow"
+                app:showAsAction="never" />
+
+            <item
+            android:id="@+id/menu_blue"
+            android:orderInCategory="1"
+            android:title="Blue"
+            app:showAsAction="never" />
+        </group>
+    </menu>
+
+    </item>
+
+
+</menu>

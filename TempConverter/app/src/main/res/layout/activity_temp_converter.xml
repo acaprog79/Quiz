@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alejandria.Project1_TempConverter.TempConverterActivity">
+
+    <TextView
+        android:id="@+id/toptitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/degrees"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:id="@+id/FarenheitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/farenheit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151"
+        android:layout_marginStart="31dp"
+        android:layout_alignBaseline="@+id/farenheitED"
+        android:layout_alignBottom="@+id/farenheitED"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/celciusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="121dp"
+        android:layout_alignBottom="@+id/celciusTV"
+        android:layout_alignStart="@+id/FarenheitLabel" />
+
+    <TextView
+        android:id="@+id/celciusTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_37_788"
+        android:textColorLink="@android:color/holo_blue_bright"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="121dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/FarenheitLabel"
+        android:layout_alignStart="@+id/farenheitED" />
+
+    <EditText
+        android:id="@+id/farenheitED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/_100"
+        android:textColorLink="@color/colorPrimary"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="63dp"
+        android:layout_below="@+id/toptitleLabel"
+        android:layout_toEndOf="@+id/FarenheitLabel"
+        android:layout_marginStart="25dp" />
+
+</RelativeLayout>

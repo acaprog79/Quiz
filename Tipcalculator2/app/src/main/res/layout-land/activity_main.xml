@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alejandria.tipcalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/bill_amount_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:text="@string/billLabel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/bill_amount_EditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/bill_amount_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/bill_Amount"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tip_Amount" />
+
+    <TextView
+        android:id="@+id/tip_percent_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bill_amount_Label"
+        android:layout_below="@+id/bill_amount_Label"
+        android:layout_marginTop="40dp"
+        android:text="@string/percentLLabel"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip_percent_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_percent_Amount"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tip_percent_Label"
+        android:layout_alignBottom="@+id/tip_percent_Label"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tip_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/percentDownButton"
+        android:layout_alignStart="@+id/tip_percent_Label" />
+
+    <TextView
+        android:id="@+id/tip_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tip_Label"
+        android:layout_alignStart="@+id/tip_percent_Amount"
+        android:text="@string/tip_Amount"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tip_total_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/percentUpButton"
+        android:layout_alignStart="@+id/tip_Label" />
+
+    <TextView
+        android:id="@+id/tip_total_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_tip_Amount"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tip_total_Label"
+        android:layout_alignBottom="@+id/tip_total_Label"
+        android:layout_alignStart="@+id/tip_Amount" />
+
+  <Button
+        android:id="@+id/percentDownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:text="@string/minusButton"
+        android:layout_alignTop="@+id/tip_percent_Amount"
+        android:layout_alignStart="@+id/percentUpButton" />
+
+    <Button
+        android:id="@+id/percentUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plusButton"
+        android:layout_alignTop="@+id/tip_Amount"
+        android:layout_alignEnd="@+id/bill_amount_EditText" />
+
+</RelativeLayout>
